@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, .piechart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #F2F2F2;
+    color: #333;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+}
+header, main, footer {
+    width: 100%;
+}
+header {
+    background-color: #333;
+    color: #F2F2F2;
+    padding: 1rem 0;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #F2F2F2;
+    background-color: #333;
+}
+main {
+    width: 1500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #dcdcdc;
+    box-shadow: 0 0 50px #333;
+}
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 100% 50%;
+    }
+    50% {
+        background-position: 0% 50%;
+    }
+    75% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.gradient-background {
+    background: linear-gradient(70deg, #ef7ad6, #9ec340);
+    background-size: 200% 200%;
+    animation: gradient-animation 10s linear infinite;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.container-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+.container-table th,
+.container-table td {
+    width: 50%;
+    padding: 15px 0;
+    text-align: center;
+}
+.piechart {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: conic-gradient(#007bff 70%, #f97558 0);
+}
+.hero {
+    background-color: #363232;
+    color: #F2F2F2;
+    padding: 2rem;
+    text-align: center;
+}
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.feature {
+    flex: 1;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+table {
+    border-collapse: separate; 
+    width: 100%;
+    height: 300%;
+    margin-top: 20px;
+    text-align: left;
+    border: 2px solid black; 
+}
+/* .iframes {
+    display: grid;
+    width: 100%;
+    height: 3%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+} */
+/* .iframes iframe {
+    transition: cubic-bezier();
+    width: 100%;
+    height: 300px; 
+    border-style: dotted;
+    border: 5px solid #ddd;
+    border-radius: 5px;
+    border-color: rgba(6, 1, 1, 0.912);
+    
+} */
+th, td {
+    border: 20px solid black; 
+    padding: 16px;
+}
+th {
+    background-color: #333;
+    color: #000000;
+}
+.table1 {
+    border-collapse: collapse;      
+    width: 0%;
+    margin-top: 0px;
+    text-align: left;
+    border: 0px solid rgb(245, 245, 245); 
+    float: right;        
+}
+.table1,th,td{
+    border: 0px solid rgb(255, 255, 255); 
+    padding: 0px;
+
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+/* .right-align {
+    float: right;
+    border-collapse: collapse;
+    border: none;
+} */
+footer {
+    text-align: right;
+    padding: 1rem 70px 1rem 0;
+    height: 250px;
+}
+footer a {
+    color: rgb(255, 255, 255);
+}
+.image-with-text-flex {
+    display: flex;
+    align-items: center;
+}
+.image-with-text-flex img {
+    flex: 1; 
+}
+.image-with-text-flex .text {
+    flex: 2; 
+}
+.image-container {
+    display: flex;
+    align-items: center;
+}
+.circle {
+    width: 150px;
+    height: 150px;
+    background-color: #ffffff; 
+    border-radius: 50%; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+} 
+
+.circle img {
+    max-width: 100%; 
+    border-radius: 50%;
+}
+/* .text {
+    /* Add styles for the text on the right 
+} */
